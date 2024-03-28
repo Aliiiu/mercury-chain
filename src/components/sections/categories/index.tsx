@@ -1,6 +1,7 @@
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import React from 'react';
 import AITab from './AI';
+import CryptocurrencyTab from './CryptoCurrency';
 
 const Categories = () => {
 	return (
@@ -35,7 +36,7 @@ const Categories = () => {
 				<AITab />
 			</TabsContent>
 			<TabsContent value='cryptocurrency'>
-				<h2>Cryptocurrency</h2>
+				<CryptocurrencyTab />
 			</TabsContent>
 			<TabsContent value='nfts'>
 				<h2>NFTs</h2>

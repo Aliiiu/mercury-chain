@@ -1,14 +1,16 @@
 import { Separator } from '@/components/ui/separator';
 import { popularNews } from '@/constant/latest-news';
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
-const AITab = () => {
+type TProps = { trendingSrc?: string; trendingTitle?: string };
+const TrendingAINews = ({ trendingSrc, trendingTitle }: TProps) => {
 	return (
 		<div className='grid grid-cols-3 mt-28 gap-5'>
 			<div className='flex gap-4 col-span-2'>
 				<div className='w-[386px] shrink-0 h-full relative'>
-					<Image src={'/images/ai-cat.png'} alt='ai-cat' fill />
+					<Image src={trendingSrc || '/images/ai-cat.png'} alt='ai-cat' fill />
 				</div>
 				<div className='flex flex-col gap-4'>
 					<div className='text-xs text-white flex divide-x gap-1'>
@@ -18,10 +20,10 @@ const AITab = () => {
 						</div>
 						<span className='pl-1'>3 min read</span>
 					</div>
-					<h3 className='font-semibold text-xl'>
-						AI crypto traders take profits pushing tokens down up to 20% after
-						scorching 2024 ra...
-					</h3>
+					<Link href={'article-page'} className='font-semibold text-xl'>
+						{trendingTitle ||
+							'AI crypto traders take profits pushing tokens down up to 20% after scorching 2024 ra...'}
+					</Link>
 					<p>
 						After a face-melting rally in the AI crypto sector over the past few
 						months, investors appear to have taken a profit-taking approach over
@@ -40,7 +42,9 @@ const AITab = () => {
 								<Image src={item.src || ''} alt='' fill />
 							</div>
 							<div className='flex flex-col justify-between'>
-								<h2>{item.title}</h2>
+								<Link href={'article-page'} className='hover:underline'>
+									{item.title}
+								</Link>
 								<div className='text-xs text-white flex divide-x gap-1'>
 									<div className='flex gap-1 items-center'>
 										<span className='w-[10px] h-[10px] shrink-0 rounded-full bg-blog-pointer' />{' '}
@@ -58,4 +62,4 @@ const AITab = () => {
 	);
 };
 
-export default AITab;
+export default TrendingAINews;

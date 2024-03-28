@@ -1,7 +1,8 @@
 import React from 'react';
 import { ScrollArea, ScrollBar } from '../ui/scroll-area';
-import { latestItems } from '@/constant/latest-news';
+import { NewsItem, latestItems } from '@/constant/latest-news';
 import { Separator } from '../ui/separator';
+import Link from 'next/link';
 
 const LastestNPopularNews = () => {
 	return (
@@ -12,7 +13,7 @@ const LastestNPopularNews = () => {
 						latest news
 					</h3>
 					<ScrollArea className='h-[442px] w-fit'>
-						{latestItems.map((item, index) => (
+						{latestItems?.map((item, index) => (
 							<>
 								<div key={index} className='flex flex-col gap-2'>
 									<div className='text-xs text-white flex divide-x gap-1'>
@@ -22,7 +23,12 @@ const LastestNPopularNews = () => {
 										</div>
 										<span className='pl-1'>{item.timePosted}</span>
 									</div>
-									<h2 className={'text-white/90 font-medium'}>{item.title}</h2>
+									<Link
+										href={'article-page'}
+										className={'text-white/90 font-medium hover:underline'}
+									>
+										{item.title}
+									</Link>
 									<p className='text-xs text-white/80'>{item.summary}</p>
 								</div>
 								<Separator className='my-3 ' />
@@ -37,7 +43,7 @@ const LastestNPopularNews = () => {
 						popular news
 					</h3>
 					<ScrollArea className='h-[442px] w-fit'>
-						{latestItems.map((item, index) => (
+						{latestItems?.map((item, index) => (
 							<>
 								<div key={index} className='flex flex-col gap-2'>
 									<div className='text-xs text-white flex divide-x gap-1'>

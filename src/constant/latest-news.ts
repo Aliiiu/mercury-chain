@@ -1,5 +1,5 @@
 // Define the News Item interface
-interface NewsItem {
+export interface NewsItem {
 	category: string;
 	timePosted: string;
 	title: string;

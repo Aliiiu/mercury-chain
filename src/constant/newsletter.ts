@@ -5,7 +5,7 @@ type NewsItem = {
 	timePosted: string;
 };
 
-type NewsFeed = NewsItem[];
+export type NewsFeed = NewsItem[];
 
 const newsFeed: NewsFeed = [
 	{

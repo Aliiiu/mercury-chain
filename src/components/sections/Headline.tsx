@@ -1,4 +1,5 @@
 import Image from 'next/image';
+import Link from 'next/link';
 import React from 'react';
 
 const Headline = () => {
@@ -9,10 +10,13 @@ const Headline = () => {
 					<span className='text-quotes text-[80px] absolute -top-8 -left-3'>
 						&ldquo;
 					</span>
-					<span className='font-semibold text-4xl text-white'>
+					<Link
+						href={'article-page'}
+						className='font-semibold text-4xl text-white'
+					>
 						Cake meme reflects coronavirus absurdity in a world where nothing is
 						what it seems.
-					</span>
+					</Link>
 					<span className='text-quotes text-xl absolute bottom-0 -right-10'>
 						-UN Secretary-General
 					</span>
