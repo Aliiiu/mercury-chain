@@ -7,7 +7,7 @@ export default function NavBar() {
 			<div className='container py-5 flex justify-between items-center'>
 				<Image src={'/logo.svg'} alt='app logo' width={185} height={44} />
 				<div className='flex items-center gap-4'>
-					<div className='flex items-center text-white'>
+					<div className='flex items-center text-white gap-1'>
 						<SearchNormal1 size={18} color='#FFFFFF' className=' shrink-0' />
 						<input
 							type='text'

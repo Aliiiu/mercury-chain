@@ -3,7 +3,7 @@ import { RiPlayFill } from 'react-icons/ri';
 
 const Banner = () => {
 	return (
-		<div className=' py-16 border-t border-white/25'>
+		<div className='container py-16 border-t border-white/25'>
 			<div className='rounded-xl px-10 py-10 w-full h-[705px] bg-cover bg-banner flex items-end'>
 				<div className='bg-black/40 w-fit px-1 py-2 rounded relative'>
 					<span className='w-[50px] h-[50px] flex justify-center items-center rounded-full bg-[#EC4D4D] absolute -top-5 -right-5'>
