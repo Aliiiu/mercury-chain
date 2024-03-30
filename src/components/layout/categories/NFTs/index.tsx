@@ -9,7 +9,7 @@ const NFTTab = () => {
 	return (
 		<div>
 			<TrendingAINews
-				trendingSrc='/images/solana.png'
+				trendingSrc='/images/solana.webp'
 				trendingTitle='NFTs defies overall market trend to hit new all-time high market cap'
 			/>
 

@@ -22,7 +22,7 @@ const Headline = () => {
 					</span>
 				</p>
 				<div className='relative flex-1 max-w-[460px] h-[136px]'>
-					<Image src={'/images/headline.png'} alt='headline' fill />
+					<Image src={'/images/headline.webp'} alt='headline' fill />
 				</div>
 			</div>
 		</div>

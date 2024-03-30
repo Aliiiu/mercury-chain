@@ -11,7 +11,7 @@ const TrendingAINews = ({ trendingSrc, trendingTitle }: TProps) => {
 			<div className='flex gap-4 col-span-2'>
 				<div className='w-[386px] shrink-0 h-full relative'>
 					<Image
-						src={trendingSrc || '/images/ai-cat.png'}
+						src={trendingSrc || '/images/ai-cat.webp'}
 						alt='ai-cat'
 						fill
 						className=' object-cover'

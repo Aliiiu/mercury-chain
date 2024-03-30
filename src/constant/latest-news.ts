@@ -58,7 +58,7 @@ export const popularNews: NewsItem[] = [
 			'Solana defies overall market trend to hit new all-time high market cap',
 		summary:
 			'After a face-melting rally in the AI crypto sector over the past few months, investors she',
-		src: '/images/binance.png',
+		src: '/images/binance.webp',
 	},
 	{
 		category: 'Technology',
@@ -67,6 +67,6 @@ export const popularNews: NewsItem[] = [
 			'Solana defies overall market trend to hit new all-time high market cap',
 		summary:
 			'After a face-melting rally in the AI crypto sector over the past few months, investors she',
-		src: '/images/solana.png',
+		src: '/images/solana.webp',
 	},
 ];

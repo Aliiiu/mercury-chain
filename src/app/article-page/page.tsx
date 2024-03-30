@@ -85,7 +85,7 @@ const ArticlePage = () => {
 						Exclusive Interview with the CEO of IQ.wiki
 					</h2>
 					<div className='relative w-full mt-8 h-[516px]'>
-						<Image src='/images/banner.png' alt='banner' fill />
+						<Image src='/images/banner.webp' alt='banner' fill />
 					</div>
 					<ArticleContent />
 				</div>

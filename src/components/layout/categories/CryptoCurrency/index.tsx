@@ -9,7 +9,7 @@ const CryptocurrencyTab = () => {
 	return (
 		<div>
 			<TrendingAINews
-				trendingSrc='/images/crypto-cat.png'
+				trendingSrc='/images/crypto-cat.webp'
 				trendingTitle='Solana defies overall market trend to hit new all-time high market cap'
 			/>
 

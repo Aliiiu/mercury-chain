@@ -71,9 +71,9 @@ const config = {
 				},
 			},
 			backgroundImage: {
-				banner: 'url(/images/banner.png)',
-				hero: 'url(/images/hero.png)',
-				'latest-news': 'url(/images/latest-news.png)',
+				banner: 'url(/images/banner.webp)',
+				hero: 'url(/images/hero.webp)',
+				'latest-news': 'url(/images/latest-news.webp)',
 				'gradient-button':
 					'linear-gradient(265.77deg, #FFC75D -7.46%, #D63154 34.2%, #F84033 76.27%, #8F42AC 114.49%)',
 				'gradient-border':

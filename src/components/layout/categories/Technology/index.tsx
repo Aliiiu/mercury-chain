@@ -9,7 +9,7 @@ const TechnologyTab = () => {
 	return (
 		<div>
 			<TrendingAINews
-				trendingSrc='/images/hero.png'
+				trendingSrc='/images/hero.webp'
 				trendingTitle='Technology defies overall market trend to hit new all-time high market cap'
 			/>
 
