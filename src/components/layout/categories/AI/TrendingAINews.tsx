@@ -7,10 +7,15 @@ import React from 'react';
 type TProps = { trendingSrc?: string; trendingTitle?: string };
 const TrendingAINews = ({ trendingSrc, trendingTitle }: TProps) => {
 	return (
-		<div className='grid grid-cols-3 mt-28 gap-5'>
+		<div className='grid grid-cols-3 mt-28 pb-14 gap-5'>
 			<div className='flex gap-4 col-span-2'>
 				<div className='w-[386px] shrink-0 h-full relative'>
-					<Image src={trendingSrc || '/images/ai-cat.png'} alt='ai-cat' fill />
+					<Image
+						src={trendingSrc || '/images/ai-cat.png'}
+						alt='ai-cat'
+						fill
+						className=' object-cover'
+					/>
 				</div>
 				<div className='flex flex-col gap-4'>
 					<div className='text-xs text-white flex divide-x gap-1'>
