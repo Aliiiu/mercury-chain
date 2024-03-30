@@ -8,7 +8,7 @@ import {
 } from '../ui/dialog';
 import { Polygon, Google } from 'iconsax-react';
 import QRCode from 'react-qr-code';
-import { TRequestObject } from '@/app/article-page/page';
+import { TRequestObject } from '@/app/article-page';
 
 type TAuthenticator = {
 	isOpen: boolean;
