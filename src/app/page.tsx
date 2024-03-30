@@ -1,5 +1,5 @@
-import Hero from '@/components/sections/Hero';
-import Categories from '@/components/sections/categories';
+import Hero from '@/components/landing/Hero';
+import Categories from '@/components/layout/categories';
 
 export default function Home() {
 	return (

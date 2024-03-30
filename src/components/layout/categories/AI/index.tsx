@@ -1,9 +1,9 @@
 import { latestItems } from '@/constant/latest-news';
-import LastestNPopularNews from '../../LastestNPopularNews';
+import LastestNPopularNews from '../../../landing/LastestNPopularNews';
 import TrendingAINews from './TrendingAINews';
-import Headline from '../../Headline';
-import Banner from '../../Banner';
-import Blogs from '../../Blogs';
+import Headline from '../../../landing/Headline';
+import Banner from '../../../landing/Banner';
+import Blogs from '../../../landing/Blogs';
 
 const AITab = () => {
 	return (

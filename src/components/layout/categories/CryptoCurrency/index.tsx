@@ -1,9 +1,9 @@
 import React from 'react';
 import TrendingAINews from '../AI/TrendingAINews';
-import LastestNPopularNews from '../../LastestNPopularNews';
-import Headline from '../../Headline';
-import Banner from '../../Banner';
-import Blogs from '../../Blogs';
+import LastestNPopularNews from '../../../landing/LastestNPopularNews';
+import Headline from '../../../landing/Headline';
+import Banner from '../../../landing/Banner';
+import Blogs from '../../../landing/Blogs';
 
 const CryptocurrencyTab = () => {
 	return (
