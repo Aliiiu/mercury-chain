@@ -53,12 +53,12 @@ const Footer = () => {
 						</div>
 						<div className=''>
 							<span className='font-semibold text-sm'>Join our community</span>
-							<div className='gap-2 flex'>
+							<div className='gap-2 flex mt-2'>
 								{socials.map((item) => (
 									<Link
 										key={item.name}
 										href={'#'}
-										className='rounded-md gradient-border w-12 h-12 flex justify-center items-center '
+										className='border border-solid border-image-source w-12 h-12 flex justify-center items-center '
 									>
 										<Image
 											src={item.src}

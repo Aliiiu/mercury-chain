@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import React from 'react';
 
 const Hero = () => {
@@ -15,9 +16,12 @@ const Hero = () => {
 							Impact
 						</p>
 					</div>
-					<button className='py-3 px-2 bg-gradient-button rounded-md text-white max-w-[188px] w-full font-medium'>
+					<Link
+						href={'article-page'}
+						className='py-3 px-2 bg-gradient-button rounded-md text-white max-w-[188px] w-full flex justify-center font-medium'
+					>
 						Read More
-					</button>
+					</Link>
 				</div>
 				<div className='p-6 bg-footer max-w-[370px] absolute -bottom-36 z-10 right-0 rounded-xl'>
 					<p className='text-white/80'>

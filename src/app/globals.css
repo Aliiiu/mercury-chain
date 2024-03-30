@@ -59,3 +59,12 @@
 		#f6a65b 87.82%
 	);
 }
+
+.border-image-source {
+	border-image-slice: 1;
+	border-image-source: linear-gradient(
+		180deg,
+		rgba(253, 228, 0, 0.69) 0%,
+		#d752ed 100%
+	);
+}
