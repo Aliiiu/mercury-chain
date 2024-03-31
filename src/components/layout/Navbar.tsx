@@ -18,7 +18,10 @@ export default function NavBar() {
 							className='outline-none text-sm bg-transparent'
 						/>
 					</div>
-					<button className='py-2 text-sm flex items-center gap-1'>
+					<button
+						type='button'
+						className='py-2 text-sm flex items-center gap-1'
+					>
 						<span className='font-medium text-white/90 '>EN</span>
 						<ArrowDown2 color='#FFFFFF' size={14} className=' shrink-0' />
 					</button>

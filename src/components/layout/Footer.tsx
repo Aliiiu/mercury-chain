@@ -33,7 +33,10 @@ const Footer = () => {
 								placeholder='Enter your email address'
 								className='bg-transparent text-sm text-white font-semibold px-2 w-full outline-none'
 							/>
-							<button className='py-3 px-2 bg-gradient-button rounded-md text-white max-w-[108px] w-full font-medium'>
+							<button
+								type='button'
+								className='py-3 px-2 bg-gradient-button rounded-md text-white max-w-[108px] w-full font-medium'
+							>
 								Sign up
 							</button>
 						</div>

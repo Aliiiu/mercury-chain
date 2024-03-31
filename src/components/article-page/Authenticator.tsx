@@ -8,7 +8,7 @@ import {
 } from '../ui/dialog';
 import { Polygon, Google } from 'iconsax-react';
 import QRCode from 'react-qr-code';
-import { TRequestObject } from '@/app/article-page';
+import type { TRequestObject } from '@/app/article-page';
 
 type TAuthenticator = {
 	isOpen: boolean;
@@ -42,13 +42,13 @@ const Authenticator = ({
 								Scan the QR code below
 							</DialogTitle>
 						</DialogHeader>
-						{authReq && authReq.request ? (
+						{authReq?.request ? (
 							<div className='w-full'>
 								<QRCode
 									level='Q'
 									className='mx-auto'
 									value={JSON.stringify(authReq.request)}
-									viewBox={`0 0 256 256`}
+									viewBox={'0 0 256 256'}
 								/>
 							</div>
 						) : (
@@ -56,7 +56,10 @@ const Authenticator = ({
 						)}
 					</DialogContent>
 				</Dialog>
-				<button className='flex hover:bg-white/70 items-center gap-1 rounded-md px-2 py-1 bg-white'>
+				<button
+					type='button'
+					className='flex hover:bg-white/70 items-center gap-1 rounded-md px-2 py-1 bg-white'
+				>
 					<Google variant='Bulk' />
 					<span className='text-sm'>Google</span>
 				</button>
