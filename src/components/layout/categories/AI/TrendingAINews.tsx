@@ -9,7 +9,7 @@ const TrendingAINews = ({ trendingSrc, trendingTitle }: TProps) => {
 	return (
 		<div className='grid grid-cols-3 mt-28 pb-14 gap-5'>
 			<div className='flex gap-4 col-span-2'>
-				<div className='w-[386px] shrink-0 h-full relative'>
+				<div className='w-[386px] shrink-0 h-full relative rounded-xl overflow-hidden'>
 					<Image
 						src={trendingSrc || '/images/ai-cat.webp'}
 						alt='ai-cat'

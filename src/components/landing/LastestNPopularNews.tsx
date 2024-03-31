@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 const LastestNPopularNews = () => {
 	return (
-		<div className='container border-t border-white/25 py-16'>
+		<div className='border-t border-white/25 py-16'>
 			<div className='flex gap-10'>
 				<div className='flex flex-col gap-5'>
 					<h3 className='text-white/80 font-semibold text-lg uppercase'>
@@ -31,13 +31,24 @@ const LastestNPopularNews = () => {
 									</Link>
 									<p className='text-xs text-white/80'>{item.summary}</p>
 								</div>
-								<Separator className='my-3 ' />
+								<Separator className='my-3 bg-white/25' />
 							</>
 						))}
 						<ScrollBar className='p-0 bg-scroll-area' />
 					</ScrollArea>
 				</div>
-				<div className='rounded-xl w-full h-[442px] bg-cover bg-latest-news mt-14'></div>
+				<div className='rounded-xl w-full h-[442px] bg-cover bg-latest-news mt-14 flex items-end py-5 px-10'>
+					<div className='bg-black/40 p-3 flex flex-col gap-6 max-w-[422px]'>
+						<h3 className='font-semibold text-3xl'>
+							US prosecutors want SBF to serve at least four decades in prison
+						</h3>
+						<p className='text-white/90 font-medium'>
+							The prosecution argued that SBF&apos;s punishment should match the
+							severity of his crime, which was the biggest financial fraud in US
+							history.
+						</p>
+					</div>
+				</div>
 				<div className='flex flex-col gap-5'>
 					<h3 className='text-white/80 font-semibold text-lg uppercase'>
 						popular news
@@ -56,7 +67,7 @@ const LastestNPopularNews = () => {
 									<h2 className={'text-white/90 font-medium'}>{item.title}</h2>
 									<p className='text-xs text-white/80'>{item.summary}</p>
 								</div>
-								<Separator className='my-3 ' />
+								<Separator className='my-3 bg-white/25' />
 							</>
 						))}
 						<ScrollBar className='p-0 bg-scroll-area' />

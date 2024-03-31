@@ -4,7 +4,7 @@ import { RiPlayFill } from 'react-icons/ri';
 
 const Banner = () => {
 	return (
-		<div className='container py-16 border-t border-white/25'>
+		<div className='py-16 border-t border-white/25'>
 			<Link
 				href={'article-page'}
 				className='rounded-xl px-10 py-10 w-full h-[705px] bg-cover bg-banner flex items-end'

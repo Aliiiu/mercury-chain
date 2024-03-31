@@ -5,7 +5,7 @@ import React from 'react';
 
 const Blogs = () => {
 	return (
-		<div className='pb-28 pt-16 container border-t border-white/25 grid grid-cols-4 gap-11'>
+		<div className='pb-28 pt-16 border-t border-white/25 grid grid-cols-4 gap-11'>
 			{newsFeed?.map((item, idx) => (
 				<div className='flex flex-col gap-4 h-full' key={idx}>
 					<Image

@@ -1,7 +1,13 @@
+'use client';
+
 import Link from 'next/link';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Hero = () => {
+	// To unsleep the backend server
+	useEffect(() => {
+		fetch('https://wikiid.onrender.com/getAuthRequest');
+	});
 	return (
 		<div className='bg-black/80 w-full'>
 			<div className='bg-cover bg-hero relative container pt-28 pb-11'>
@@ -23,7 +29,7 @@ const Hero = () => {
 						Read More
 					</Link>
 				</div>
-				<div className='p-6 bg-footer max-w-[370px] absolute -bottom-36 z-10 right-0 rounded-xl'>
+				<div className='p-6 bg-footer max-w-[370px] absolute -bottom-36 z-10 border border-white/25 right-10 rounded-xl'>
 					<p className='text-white/80'>
 						Fun Fact about Vision Pro: Despite its high-tech image, the original
 						inspiration for the name &ldquo;Vision Pro&rdquo; actually came from

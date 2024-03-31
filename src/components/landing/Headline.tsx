@@ -4,10 +4,10 @@ import React from 'react';
 
 const Headline = () => {
 	return (
-		<div className='py-16 container border-t border-white/25'>
+		<div className='py-16 border-t border-white/25'>
 			<div className='flex items-start'>
 				<p className='max-w-[740px] mt-16 relative'>
-					<span className='text-quotes text-[80px] absolute -top-8 -left-3'>
+					<span className='text-quotes text-[80px] -z-10 absolute -top-8 -left-3'>
 						&ldquo;
 					</span>
 					<Link
@@ -17,7 +17,7 @@ const Headline = () => {
 						Cake meme reflects coronavirus absurdity in a world where nothing is
 						what it seems.
 					</Link>
-					<span className='text-quotes text-xl absolute bottom-0 -right-10'>
+					<span className='text-quotes text-xl absolute font-medium bottom-0 -right-10'>
 						-UN Secretary-General
 					</span>
 				</p>
