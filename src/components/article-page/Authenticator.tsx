@@ -24,7 +24,7 @@ const Authenticator = ({
 	getAuthReq,
 }: TAuthenticator) => {
 	return (
-		<div className='flex flex-col items-center bg-white/80 rounded-lg h-fit text-black p-10 mt-20'>
+		<div className='flex flex-col items-center bg-white/80 rounded-lg h-fit text-black p-10 mt-[300px]'>
 			<h2 className='text-2xl font-semibold'>Welcome</h2>
 			<p>Login to your account</p>
 			<div className='flex mt-5 gap-5'>
