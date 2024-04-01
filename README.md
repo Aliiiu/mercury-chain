@@ -1,48 +1,60 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Offchain Verification Using PolygonID
 
-## Getting Started
+> Any application that wants to authenticate user based on their credential must
+> setup a verifier. A Verifier can be a web2 or web3 platform that is made of a
+> Server an a Client.
 
-First, run the development server:
+![](./public/images/off-chain-flow.png)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Description
+
+At its core, every off-chain interaction between a Verifier and a user's Wallet
+follows this workflow:
+
+- A verifier set up queries based on users' existing credentials from a broad
+  set of issuers. This is query encapsulates the criteria that the user must
+  match to authenticate, such as "must be an HiIQ Holder".
+- The request from the verifier is designed using Zero Knowledge Query Language
+  and encapsulates into a QR code to be shown to the user.
+- The user scans the QR code using his/her mobile polygon ID wallet and parses
+  the request
+- The user fetches the revocation status of the requested credential from the
+  Issuer of that credential.
+- The user generates a zk proof on mobile according to the request of the
+  website starting from the credentials held in his/her wallet. This also
+  contains the zk proof that the credential is not revoked.
+- The user sends the zk proof to the Verifier.
+- The Verifier verifies the zk Proof using the verification API.
+- The Verifier checks that the State of the Issuer of the credential and the
+  State of the user are still valid and have not been revoked (this is still
+  performed using the same verification API).
+- If the verification is successful, the Verifier grants access to the user (or
+  activates any customized logic)
+
+## Usage example
+
+Assume that the request is: "Are you an HiIQ Holder?". The Verifier never gets
+access to any of the user's credentials. Instead, the Verifier receives a
+cryptographic proof which, on verification, provides an answer "yes" or "no" to
+the previous question.
+
+## Get Started
+
+```sh
+git clone <repo url>
+
+cd <cloned folder>
+
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the
-result.
+```sh
+yarn
+yarn dev
+```
 
-You can start editing the page by modifying `app/page.tsx`. The page
-auto-updates as you edit the file.
+### User Flow
 
-This project uses
-[`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to
-automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js
-  features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out
-[the Next.js GitHub repository](https://github.com/vercel/next.js/) - your
-feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the
-[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
-
-Check out our
-[Next.js deployment documentation](https://nextjs.org/docs/deployment) for more
-details.
+- From the home page, click on any hyperlink to read more about any article
+- You get to the aricle page
+- You verify your identity using the polygon ID
+- Get access to the content
