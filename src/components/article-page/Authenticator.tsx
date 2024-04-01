@@ -26,7 +26,9 @@ const Authenticator = ({
 	return (
 		<div className='flex flex-col items-center bg-white/80 rounded-lg h-fit min-w-[300px] text-black p-10 mt-[300px]'>
 			<h2 className='text-2xl font-semibold'>Welcome</h2>
-			<p>Verify your credential</p>
+			<p className='mt-2'>
+				Verify your credential, To continue reading this wiki
+			</p>
 			<div className='flex mt-5 gap-5'>
 				<Dialog open={isOpen} onOpenChange={setIsOpen}>
 					<DialogTrigger
